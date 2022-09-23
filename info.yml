@@ -43,16 +43,16 @@ INCIDENT_COMMANDER_PAGER_NUMBER: '{{INCIDENT_COMMANDER_PAGER_NUMBER}}'
 INCIDENT_COMMANDER_PAGER_URL: '{{INCIDENT_COMMANDER_PAGER_URL}}'
 
 # URL/path to Commander roster/list (e.g., ir.acme.tld/ic-roster)
-INCIDENT_COMMANDER_ROSTER: 'https://codecapsules.io/rosters/icr'
+INCIDENT_COMMANDER_ROSTER: 'https://github.com/codecapsules-io/incident-response-plan'
 
 # As above, for security team (e.g., ir.acme.tld/sec-roster)
-SECURITY_TEAM_ROSTER: 'https://codecapsules.io/rosters/security'
+SECURITY_TEAM_ROSTER: 'https://github.com/codecapsules-io/incident-response-plan'
 
 # As above, for SMEs (e.g., ir.acme.tld/sme-roster)
-TEAM_SME_ROSTER: 'https://codecapsules.io/rosters/sme'
+TEAM_SME_ROSTER: 'https://github.com/codecapsules-io/incident-response-plan'
 
 # As above, for executive team (e.g., ir.acme.tld/exec-roster)
-EXECUTIVE_ROSTER: 'https://codecapsules.io/rosters/exec'
+EXECUTIVE_ROSTER: 'https://github.com/codecapsules-io/incident-response-plan'
 
 # Time to wait for on-duty IC on call (e.g., 15 minutes)
 INCIDENT_COMMANDER_RESPONSE_SLA: '1 hour'
@@ -61,19 +61,19 @@ INCIDENT_COMMANDER_RESPONSE_SLA: '1 hour'
 UPDATE_FREQUENCY: '8 hours'
 
 # URL/path to incident file (e.g., ir.acme.tld/files/codename)
-INCIDENT_FILE_LOCATION: 'https://codecapsules.io/incidents'
+INCIDENT_FILE_LOCATION: 'https://github.com/codecapsules-io/incident-response-plan'
 
 # URL/path to critical information list, data you want to protect (e.g., ir.acme.tld/cil)
-CRITICAL_INFO_LIST_LOCATION: 'https://codecapsules.io/cil'
+CRITICAL_INFO_LIST_LOCATION: 'https://github.com/codecapsules-io/incident-response-plan'
 
 # URL/path to critical asset list, systems you want to protect (e.g., ir.acme.tld/cal)
-CRITICAL_ASSET_LIST_LOCATION: 'https://codecapsules.io/cal'
+CRITICAL_ASSET_LIST_LOCATION: 'https://github.com/codecapsules-io/incident-response-plan'
 
 # URL/path to asset management DB (e.g., ir.acme.tld/assets)
-ASSET_MGMT_DB_LOCATION: 'https://codecapsules.io/assets'
+ASSET_MGMT_DB_LOCATION: 'https://github.com/codecapsules-io/incident-response-plan'
 
 # URL/path to network map (e.g., ir.acme.tld/netmap)
-NETWORK_MAP_LOCATION:  'https://codecapsules.io/netmap'
+NETWORK_MAP_LOCATION:  'https://github.com/codecapsules-io/incident-response-plan'
 
 # URL to SIEM (e.g., siem.acme.tld)
 SIEM_CONSOLE_LOCATION: '{{SIEM_CONSOLE_LOCATION}}'
@@ -91,10 +91,10 @@ MEMORY_COLLECTION_TOOL: 'Kubernetes Cluster'
 DISK_IMAGE_TOOL: 'Kubernetes Cluster'
 
 # URL/path to IR report template (e.g., ir.acme.tld/report/template)
-INCIDENT_REPORT_TEMPLATE: 'https://codecapsules.io/incidents/report/template'
+INCIDENT_REPORT_TEMPLATE: 'https://github.com/codecapsules-io/incident-response-plan'
 
 # URL/path to report recipient list (e.g., ir.acme.tld/report/recipients)
-INCIDENT_REPORT_RECIPIENTS: 'https://codecapsules.io/incidents/report/recipients'
+INCIDENT_REPORT_RECIPIENTS: 'https://github.com/codecapsules-io/incident-response-plan'
 
 # Compliance team name and contact info (e.g., the legal team, legal@acme.tld)
 COMPLIANCE_TEAM:  'legal@codecapsules.io'
