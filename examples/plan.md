@@ -8,8 +8,6 @@ This incident response plan is based on the concise, directive, specific, flexib
 
 It was last reviewed on {{REVIEW_DATE}}. It was last tested on {{TEST_DATE}}.
 
-`TODO: Customize this plan template for your organization using instructions at https://github.com/counteractive/incident-response-plan-template.  For incident response services, or help customizing, implementing, or testing your plan, contact us at contact@counteractive.net or at (888) 925-5765.`
-
 # Assess
 
 1. **Stay calm and professional.**
@@ -32,8 +30,6 @@ What is the direct or likely impact on your information/data, particularly anyth
 * None: handle via non-incident channels (_e.g._, support ticket).
 
 **Every team member is empowered to start this process.**  If you see something, say something.
-
-`TODO: Customize categories/severities as necessary.  This simple example (incident vs. no incident) is based on impact categories in NIST SP 800-61r2.`
 
 # Initiate Response
 

@@ -50,6 +50,6 @@ Read and understand the incident response plan, including the roles and playbook
 #### Prerequisites
 
 * Excellent verbal and written **communication skills**.
-* _OPTIONAL:_ Customer support training.
-* _OPTIONAL:_ Corporate communication or marketing training.
+* Customer support training.
+* Corporate communication or marketing training.
 

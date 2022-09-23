@@ -1,8 +1,9 @@
-all: public/plan.md public/plan.html public/plan.docx public/plan.pdf
+all: public/plan.md public/plan.html public/plan.docx
 
 public/plan.md: build/_plan.md
 	mkdir -p public
-	mustache info.yml build/_plan.md > public/plan.md
+	yaml2json -s info.yml
+	mustache info.json build/_plan.md > public/plan.md
 
 public/plan.html: public/plan.md build/_pandoc.yml
 	pandoc --toc --toc-depth=3 --standalone --metadata-file=build/_pandoc.yml --output=public/plan.html public/plan.md
@@ -15,7 +16,8 @@ public/plan.pdf: public/plan.md build/_pandoc.yml
 
 build/_pandoc.yml: info.yml pandoc.yml
 	mkdir -p build
-	mustache info.yml pandoc.yml > build/_pandoc.yml
+	yaml2json -s info.yml
+	mustache info.json pandoc.yml > build/_pandoc.yml
 
 build/_plan.md: *.md playbooks/*.md reference/*.md roles/*.md
 	mkdir -p build

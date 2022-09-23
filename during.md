@@ -4,12 +4,6 @@ Author: {{AUTHOR_NAME}}, {{AUTHOR_EMAIL}}
 
 Revision {{REVISION_NUMBER}}, Released {{RELEASE_DATE}}
 
-This incident response plan is based on the concise, directive, specific, flexible, and free plan available on Counteractive Security's [Github](https://github.com/counteractive/incident-response-plan-template) and discussed at [www.counteractive.net](https://www.counteractive.net/posts/an-ir-plan-you-will-use/)
-
-It was last reviewed on {{REVIEW_DATE}}. It was last tested on {{TEST_DATE}}.
-
-`TODO: Customize this plan template for your organization using instructions at https://github.com/counteractive/incident-response-plan-template.  For incident response services, or help customizing, implementing, or testing your plan, contact us at contact@counteractive.net or at (888) 925-5765.`
-
 # Assess
 
 1. **Stay calm and professional.**
@@ -33,28 +27,25 @@ What is the direct or likely impact on your information/data, particularly anyth
 
 **Every team member is empowered to start this process.**  If you see something, say something.
 
-`TODO: Customize categories/severities as necessary.  This simple example (incident vs. no incident) is based on impact categories in NIST SP 800-61r2.`
-
 # Initiate Response
 
 ## Name the Incident
 
-Create an [simple two-word phrase](http://creativityforyou.com/combomaker.html) to refer to the incident---a codename---to use for the incident file and channel(s). `TODO: Customize incident naming procedure.`
+Create a [simple two-word phrase](http://creativityforyou.com/combomaker.html) to refer to the incident---a codename---to use for the incident file and channel(s).
 
 ## Assemble the Response Team
 
-1. Page the on-duty/on-call Incident Commander. `TODO: Add Incident Commander call list or procedure`
-1. **Do not** discuss the incident outside the response team unless cleared by the Incident Commander
-1. Launch and/or join the response chat at {{RESPONSE_CHAT}}.  `TODO: Add response chat launch procedure.`
-1. Launch and/or join the response call at {{RESPONSE_PHONE}} and/or {{RESPONSE_VTC}}.  `TODO: Add response call launch procedure.`
-1. Prefer voice call, chat, and secure file exchange over any other methods.
-1. **Do not** use primary email if possible.  If email is necessary, use sparingly or use {{ALTERNATE_EMAIL}}.  Encrypt emails when any participant is outside the {{ORGANIZATION_DOMAIN}} domain.  `TODO: Add alternative email details and procedure, e.g., on-demand Office 365 or GSuite`
-1. **Do not** use SMS/text to communicate about the incident, unless to tell someone to move to a more secure channel.
-1. Invite on-duty/on-call responders to the response call and response chat.
-    * Invite the security team.  `TODO: Add security team contact list or procedure.`
-    * Invite a SME for affected teams and systems.  `TODO: Add team SME contact list or procedure.`
-    * Invite executive stakeholders and legal counsel at earliest opportunity, but prioritize operational responders.  `TODO: Add executive stakeholder contact list or procedure.`
-1. _OPTIONAL:_ Establish an in-person collaboration room ("war room") for complex or severe incidents. `TODO: Add collaboration room procedure.`
+1. Page the on-duty/on-call Incident Commander.
+2. **Do not** discuss the incident outside the response team unless cleared by the Incident Commander
+3. Launch and/or join the response chat at {{RESPONSE_CHAT}}. 
+4. Prefer Github, Slack and Secure file exchange over any other methods.
+5. **Do not** use primary email if possible.  If email is necessary, use sparingly or use {{ALTERNATE_EMAIL}}.  Encrypt emails when any participant is outside the {{ORGANIZATION_DOMAIN}} domain. 
+6. **Do not** use SMS/text to communicate about the incident, unless to tell someone to move to a more secure channel.
+7. Invite on-duty/on-call responders to the response call and response chat.
+    * Invite the security team. 
+    * Invite a SME for affected teams and systems. 
+    * Invite executive stakeholders and legal counsel at earliest opportunity, but prioritize operational responders.
+8. _OPTIONAL:_ Establish an in-person collaboration room ("war room") for complex or severe incidents.
 
 ### Reference: Response Team Structure
 
@@ -70,20 +61,15 @@ Create an [simple two-word phrase](http://creativityforyou.com/combomaker.html) 
   * SMEs for Teams/Business Units
   * SMEs for Executive Functions (_e.g._, Legal, HR, Finance)
 
-`TODO: Modify role structure as necessary.`
-
 ### Reference: Response Team Contact Information
 
 Response Team Role           | Contact Information
 ---------------------------- | ---------------------------
-Incident Commander pager     | {{INCIDENT_COMMANDER_PAGER_NUMBER}}
-Incident Commander pager url | {{INCIDENT_COMMANDER_PAGER_URL}}
 Incident Commander roster    | {{INCIDENT_COMMANDER_ROSTER}}
 Security team roster         | {{SECURITY_TEAM_ROSTER}}
 Team SME roster              | {{TEAM_SME_ROSTER}}
 Executive roster             | {{EXECUTIVE_ROSTER}}
 
-`TODO: Customize response team contact information.  Include contact procedures in rosters, which can be static or dynamic.`
 
 ## Establish Battle Rhythm
 
@@ -125,7 +111,7 @@ Executive roster             | {{EXECUTIVE_ROSTER}}
 
 ### Conduct Response Update
 
-* Conduct scheduled updates using the [update call structure](#reference-response-update-call-structure) every {{UPDATE_FREQUENCY}} on the active bridge. `TODO: Customize update frequency and scripts; recommend no more than twice daily.`
+* Conduct scheduled updates using the [update call structure](#reference-response-update-call-structure) every {{UPDATE_FREQUENCY}} on the active bridge.
 * Adjust frequency as necessary.
 * Coordinate independent updates (_e.g._, executive, legal) as required, but as infrequently as practicable.
 
@@ -158,7 +144,7 @@ Executive roster             | {{EXECUTIVE_ROSTER}}
 
 ### Create Sub-Teams
 
-* In preparation for complex incidents, three sub-teams are pre-defined: Investigation, Remediation, and Communication, generally responsible for those response functions. `TODO: Customize sub-team structure if necessary.`
+* In preparation for complex incidents, three sub-teams are pre-defined: Investigation, Remediation, and Communication, generally responsible for those response functions. 
 * Create a call bridge and chat for each sub-team.
 * The Incident Commander will designate team leaders, who report to the IC, and team members, who report to their team leader.  _Team leaders do not have to be trained as incident commanders, however some leadership experience is preferable._
 * The Incident Commander may adjust the purpose or name of the sub-teams as necessary.
@@ -184,13 +170,12 @@ If an incident turns out to be two or more distinct incidents:
     * Provision secure file exchange.
     * Obtain physical storage.
     * Share the incident file location on the call and chat.
-    * `TODO: Customize and automate file location and procedure`
-1. Document the functional and information impact, if known (see [Assess](#assess)). `TODO: Customize impact categories, if necessary.`
-1. Document the vector, if known (_e.g.,_ web, email, removable media). `TODO: Customize vector list, if necessary.`
-1. Document the incident summary: a brief overview of the vector, impact, investigation, and remediation situation, if known.
-1. Document the incident timeline, including attacker activity and responder activity. `TODO: Add timelines of varying details, as necessary.`
-1. Document investigation, remediation, and communication steps.  Document activities independently so they can be combined and reused, if possible.
-1. Track significant information such as:
+2. Document the functional and information impact, if known (see [Assess](#assess)). 
+3. Document the vector, if known (_e.g.,_ web, email, removable media). 
+4. Document the incident summary: a brief overview of the vector, impact, investigation, and remediation situation, if known.
+5. Document the incident timeline, including attacker activity and responder activity. 
+6. Document investigation, remediation, and communication steps.  Document activities independently so they can be combined and reused, if possible.
+7. Track significant information such as:
     * **Evidence**, with time of collection, source, chain of custody, _etc._
     * **Affected systems**, with how and when system was identified, and summary of effect (_e.g._, has malware, data accessed).
     * **Files of interest**, such as malware or data files, with system and metadata.
@@ -199,8 +184,6 @@ If an incident turns out to be two or more distinct incidents:
     * **Network-based indicators of compromise (IOCs)**, such as IP addresses and domains.
     * **Host-based IOCs**, such as filenames, hashes, and registry keys.
     * **Compromised accounts**, with scope of access and time of compromise.
-
-`TODO: Customize incident documentation procedure, including spreadsheets, databases, forms, systems, and templates, if necessary.`
 
 ## Collect Initial Leads
 
@@ -221,9 +204,6 @@ Network map               | {{NETWORK_MAP_LOCATION}}
 SIEM console              | {{SIEM_CONSOLE_LOCATION}}
 Log aggregator            | {{LOG_AGGREGATOR_CONSOLE}}
 
-`TODO: Complete critical information and asset lists ("crown jewels"). This is incredibly important to effective response.`
-
-`TODO: Customize response resource list`
 
 ## Update Investigative Plan and Incident File
 
@@ -276,8 +256,8 @@ See the [MITRE ATT&CK page](https://attack.mitre.org/) for more insight and idea
 > Emphasize **dynamic and behavioral** indicators alongside static fingerprints.
 
 * Create IOCs based on [initial leads](#collect-initial-leads) and [analysis](#analyze-evidence).
-* Create IOCs using an open format supported by your tools (_e.g._, [STIX 2.0](https://oasis-open.github.io/cti-documentation/stix/intro)), if possible. `TODO: Customize IOC format as necessary.`
-* Use automation, if possible. `TODO: Add IOC deployment/revocation procedure.`
+* Create IOCs using an open format supported by your tools (_e.g._, [STIX 2.0](https://oasis-open.github.io/cti-documentation/stix/intro)), if possible. 
+* Use automation, if possible. 
 * **Do not** deploy unrelated, un-curated "feeds" of IOCs; these can cause confusion and fatigue.
 * Consider all IOC types:
   * Network-based IOCs such as IP or MAC addresses, ports, email addresses, email content or metadata, URLs, domains, or PCAP patterns.
@@ -295,17 +275,15 @@ See the [MITRE ATT&CK page](https://attack.mitre.org/) for more insight and idea
 ## Collect Evidence
 
 * Prioritize based on the investigative plan
-* Collect live response data using {{LIVE_RESPONSE_TOOL}}.  `TODO: Customize live response tools and procedure.`
-* Collect relevant logs from system(s) (if not part of live response), aggregator(s), SIEM(s), or device console(s).  `TODO: Customize log collection tools and procedure.`
-* Collect memory image, if necessary and if not part of live response, using {{MEMORY_COLLECTION_TOOL}}.  `TODO: Customize memory collection tools and procedure.`
-* Collect disk image, if necessary, using {{DISK_IMAGE_TOOL}}.  `TODO: Customize disk image collection tool and procedure.`
-* Collect and store evidence in accordance with policy, and with proper chain of custody. `TODO: Customize evidence collection and chain of custody policy.`
+* Collect live response data using {{LIVE_RESPONSE_TOOL}}. 
+* Collect relevant logs from system(s) (if not part of live response), aggregator(s), SIEM(s), or device console(s). 
+* Collect memory image, if necessary and if not part of live response, using {{MEMORY_COLLECTION_TOOL}}.  
+* Collect disk image, if necessary, using {{DISK_IMAGE_TOOL}}. 
+* Collect and store evidence in accordance with policy, and with proper chain of custody. 
 
 Consider collecting the following artifacts as evidence, either in real time (_e.g., via EDR or a SIEM) or on demand:
 
 ###  Example Useful Artifacts
-
-`TODO: Customize and prioritize useful artifacts.`
 
 * Running Processes
 * Running Services
@@ -340,8 +318,6 @@ Consider collecting the following artifacts as evidence, either in real time (_e
 * Update the case file
 
 ### Example Useful Indicators
-
-`TODO: Customize and prioritize useful indicators.`
 
 * Unusual authentication behavior (_e.g._, frequency, systems, time of day, remote location)
 * Non-Standard formatted usernames
@@ -442,7 +418,7 @@ Determine the timing strategy---when remediation actions will be taken---by enga
 
 ## Execute Remediation
 
-* Assess and explain risks of remediation actions to stakeholders.  `TODO: Customize remediation risk approval procedure, if necessary.`
+* Assess and explain risks of remediation actions to stakeholders.  
 * Immediately implement those remediation actions with little or no affect on the attacker (sometimes called "posturing actions").  For example, many of the [protection](#protect) and [detection](#detect) actions above are good candidates.
 * Schedule and task remediation actions according to the timing strategy.
 * Execute remediation actions in batches, as events, for maximum effectiveness and minimum risk.
@@ -476,7 +452,6 @@ All communication must include the most accurate information available.  Display
 
 * Upon incident closure, capture information in the [incident file](#create-incident-file) for distribution using the format at {{INCIDENT_REPORT_TEMPLATE}}.  **If the vector, impact, summary, timeline, and activity reports are complete, this can be fully automated.**
 * Distribute the incident report to the following: {{INCIDENT_REPORT_RECIPIENTS}}.
-* `TODO: Customize incident report creation and distribution, if necessary`
 
 ## Communicate Externally
 
@@ -527,12 +502,8 @@ All communication must include the most accurate information available.  Display
 
 # Recover
 
-`TODO: Customize recovery steps.`
-
-`TODO: Specify tools and procedures for each step, below.`
-
 **Recovery is typically governed by business units and system owners.  Take recovery actions only in collaboration with relevant stakeholders.**
 
 1. Launch business continuity/disaster recovery plan(s): _e.g._, consider migration to alternate operating locations, fail-over sites, backup systems.
-1. Integrate security actions with organizational recovery efforts.
+2. Integrate security actions with organizational recovery efforts.
 

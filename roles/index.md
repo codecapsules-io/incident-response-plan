@@ -2,8 +2,6 @@
 
 The following are the descriptions, duties, and training for each of the defined roles in an incident response.
 
-`TODO: Customize roles, descriptions, duties, and training, if necessary.`
-
 ## Structure of Roles
 
 * Command Team

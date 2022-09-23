@@ -1,3 +1,5 @@
+
+
 ## Playbook: Website Defacement
 
 **Investigate, remediate (contain, eradicate), and communicate in parallel!**
@@ -45,19 +47,12 @@ Assign steps to individuals or teams to work concurrently, when possible; this p
     * Sawmill
     * Deep Log Analyzer
 
-
-`TODO: Expand investigation steps, including key questions and strategies, for website defacement.`
-
 ### Remediate
 
 * **Plan remediation events** where these steps are launched together (or in coordinated fashion), with appropriate teams ready to respond to any disruption.
 * **Consider the timing and tradeoffs** of remediation actions: your response has consequences.
 
 #### Contain
-
-`TODO: Customize containment steps, tactical and strategic, for website defacement.`
-
-`TODO: Specify tools and procedures for each step, below.`
 
 1. Backup all data stored on the web server for forensic purposes.
 2. As previously mentioned, make sure to take the defaced page's server down temporarily while investigation occurs.
@@ -69,10 +64,6 @@ Assign steps to individuals or teams to work concurrently, when possible; this p
 
 ### Recover
 
-`TODO: Customize recovery steps for defacement`
-
-`TODO: Specify tools and procedures for each step, below`
-
 1. Remove the hacker's message and replace with original, legitimate content. If data was lost in the attack, reference backups and restore the original page as much as possible.
     * Check backups for indicators of compromise
     * Consider partial recovery and backup integrity testing
@@ -82,8 +73,6 @@ Assign steps to individuals or teams to work concurrently, when possible; this p
 
 #### Risk Avoidance
 
-`TODO: Communicate with other employees to ensure that everyone understands and contributes to the following steps, where applicable`
-
 1. Use as few plug-ins as necessary. Hackers target websites that are vulnerable and have many sources of entry. You can limit these sources of entry by only using what you need and removing any unused or old plug ins and software. It is also important to update these as soon as possible. 
 2. Closely monitor and mandate access to administrative content. Only allow individuals access to what they need access to. This will reduce the chance of human error leading to cyber attacks. There are more DIY methods of prevention mentioned in [this article](https://cirt.gy/index.php/node/116) (steps 6-12) and in resource #4 at the end of this playbook.
 3. Regularly check for malware on your site by scanning the source code. Look for scripts, iframes, or URLs that look unfamiliar and make sure to also scan URLs that do look familiar.
@@ -92,72 +81,38 @@ Assign steps to individuals or teams to work concurrently, when possible; this p
 6. Install defacement detection programs so that if an attack were to occurr again, you would be prepared and respond quickly. Here is an [article](https://www.techradar.com/news/best-website-defacement-monitoring-service) that summarizes some of 2020's best monitoring services. 
 7. Discuss with your employees the importance of keeping administrative access limited and confidential and inform them of these steps to avoid incidents including regular cybersecurity awareness training.
 
-#### Reference: Remediation Resources
-
-`TODO: Specify financial, personnel, and logistical resources to accomplish remediation`
-
 ### Communicate
 
-`TODO: Customize communication steps for defacement`
-
-`TODO: Specify tools and procedures (including who must be involved) for each step, below, or refer to overall plan`
-
 1. Escalate incident and communicate with leadership per procedure
-1. Document incident per procedure (and report if applicable)
-1. Communicate with internal and external legal counsel per procedure, including discussions of compliance, risk exposure, liability, law enforcement contact, _etc._
-1. Communicate with users (internal)
+2. Document incident per procedure (and report if applicable)
+3. Communicate with internal and external legal counsel per procedure, including discussions of compliance, risk exposure, liability, law enforcement contact, _etc._
+4. Communicate with users (internal)
     1. Communicate incident response updates per procedure
-    1. Communicate impact of incident **and** incident response actions (e.g., containment: "why is the file share down?")
-    1. Communicate requirements: "what should users do and not do?"  
-1. Communicate with customers
+    2. Communicate impact of incident **and** incident response actions (e.g., containment: "why is the file share down?")
+    3. Communicate requirements: "what should users do and not do?"  
+5. Communicate with customers
     1. Focus particularly on those whose data was affected
-    1. Generate required notifications based on applicable regulations (particularly those that may consider defacement a data breach or otherwise requires notifications) `TODO: Expand notification requirements and procedures for applicable regulations`
-1. Contact insurance provider(s)
+    2. Generate required notifications based on applicable regulations (particularly those that may consider defacement a data breach or otherwise requires notifications)
+6. Contact insurance provider(s)
     1. Discuss what resources they can make available, what tools and vendors they support and will pay for, _etc._
-    1. Comply with reporting and claims requirements to protect eligibility
-1. Consider notifying and involving law enforcement. TODO: Link the following bullets to actual resources for your organization
-    1. [Local law enforcement](#TODO-link-to-actual-resource)
-    1. [State or regional law enforcement](#TODO-link-to-actual-resource)
-    1. [Federal or national law enforcement](#TODO-link-to-actual-resource)
-1. Communicate with security and IT vendors TODO: Link the following bullets to actual resources for your organization
-    1. Notify and collaborate with [managed providers](#TODO-link-to-actual-resource) per procedure
-    1. Notify and collaborate with [incident response consultants](#TODO-link-to-actual-resource) per procedure
+    2. Comply with reporting and claims requirements to protect eligibility
+7. Communicate with security and IT vendors 
+    1. Notify and collaborate with managed providers per procedure
+    2. Notify and collaborate with incident response consultants per procedure
 
 ### Resources
 
 #### Reference: User Actions for Suspected Defacement Attack
 
-`TODO: Customize steps for users dealing with suspected defacement`
-
 1. Stay calm, take a deep breath.
-1. Disconnect your system from the network `TODO: include detailed steps with screenshots, a pre-installed tool or script to make this easy ("break in case of emergency"), consider hardware network cut-off switches`
-1. Take pictures of the page you see using your smartphone showing the things you noticed: the defacement message and any other changes to the usual site.
-1. Take notes about the problem(s) using the voice memo app on your smartphone or pen-and-paper.  Every little bit helps!  Document the following:
+2. Disconnect your system from the network 
+3. Take pictures of the page you see using your smartphone showing the things you noticed: the defacement message and any other changes to the usual site.
+4. Take notes about the problem(s) using the voice memo app on your smartphone or pen-and-paper.  Every little bit helps!  Document the following:
     1. What did you notice?
-    1. When did it first occur, and how often since?
-    1. What data do you typically access?
-    1. Who else have you contacted about this incident, and what did you tell them?
-1. Contact the [help desk](#TODO-link-to-actual-resource) and be as helpful as possible.
-1. Be patient: allow the IT personnel get it under control, you may be protecting others from harm!  **Thank you.**
-
-#### Reference: Help Desk Actions for Suspected Defacement Attack
-
-`TODO: Customize steps for help desk personnel dealing with suspected defacement`
-
-1. Stay calm, take a deep breath.
-1. Open a ticket to document the incident, per procedure. `TODO: Customize template with key questions (see below) and follow-on workflow`
-1. Use your best judgement on which steps to prioritize (i.e. if the defacement left harmful or triggerring content, prioritize taking down the server immediately).
-1. Ask the user to take pictures of their screen using their smartphone showing the things they noticed.
-1. Take notes about the problem(s) using the voice memo app on your smartphone or pen-and-paper.  If this is a user report, ask detailed questions, including:
-       1. What did you notice?
-    1. When did it first occur, and how often since?
-    1. What data do you typically access?
-    1. Who else have you contacted about this incident, and what did you tell them?
-1. Ask follow-up questions as necessary.  **You are an incident responder, we are counting on you.**
-1. Get detailed contact information from the user (home, office, mobile), if applicable.
-1. Record all information in the ticket, including hand-written and voice notes.
-1. Quarantine affected users and systems. `TODO: Customize containment steps, automate as much as possible`
-1. Contact the [security team](#TODO-link-to-actual-resource) and stand by to participate in the response as directed: investigation, remediation, communication, and recovery.
+    2. When did it first occur, and how often since?
+    3. What data do you typically access?
+    4. Who else have you contacted about this incident, and what did you tell them?
+5. Be patient: allow the IT personnel get it under control, you may be protecting others from harm!  **Thank you.**
 
 #### Additional Information
 1. <a name="defacement-playbook-ref-1"></a>A helpful and detailed [paper](https://pdfs.semanticscholar.org/899e/2d629e06d920b9059edb21fcb52cdb33f783.pdf) on defacement detection
