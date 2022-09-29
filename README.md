@@ -1,4 +1,19 @@
-# Incident Response Plan Template
+
+<p align="center">
+  <a href="https://codecapsules.io/">
+    <img alt="Code Capsules" title="Code Capsules" src="./logo.svg" width="400" style="color: black">
+  </a>
+</p>
+
+
+<p align="center">
+  <i>The simplest way to deploy your code.</i><br/> 
+  <a href="https://codecapsules.io/">https://codecapsules.io</a>
+</p>
+
+<h1 align="center">
+  Incident Response Plan Template
+</h1>
 
 ## About
 
